@@ -1,0 +1,55 @@
+.boards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.board-card {
+  background-color: $card-bg;
+  border-radius: $border-radius;
+  padding: 16px;
+  box-shadow: $shadow;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 14px;
+    color: $text-muted;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+}
+
+.status-active {
+  color: green;
+  font-weight: bold;
+}
+
+.status-archived {
+  color: gray;
+  font-weight: bold;
+}
+
+.delete-button {
+  margin-top: 10px;
+  padding: 6px;
+  background-color: $danger-color;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

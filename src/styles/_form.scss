@@ -1,0 +1,31 @@
+.add-board-form {
+  background: $card-bg;
+  padding: 16px;
+  border-radius: $border-radius;
+  margin-bottom: 30px;
+  box-shadow: $shadow;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input,
+  textarea,
+  select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
